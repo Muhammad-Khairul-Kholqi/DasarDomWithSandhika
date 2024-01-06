@@ -1,2 +1,6 @@
 Events mempresentasikan sebuah kejadian yang terjadi di dalam DOM
 Kejadian tersebut dilakukan oleh user
+
+#Event Handler
+->Panggil keyword on<eventnya apa>
+->Event yang bisa kita dengrkan namanya "onclick"
