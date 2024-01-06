@@ -1,6 +1,12 @@
 Events mempresentasikan sebuah kejadian yang terjadi di dalam DOM
 Kejadian tersebut dilakukan oleh user
+Event ada banyak contohnya click,mouseenter,dblclick dll
 
 #Event Handler
 ->Panggil keyword on<eventnya apa>
 ->Event yang bisa kita dengrkan namanya "onclick"
+->Bisa menulisnya di html bisa juga di js
+->Akan menimpa perilaku sebelumnya
+
+#Event Listener
+->Menambahkan perilaku sebelumnya tidak akan di timpa
