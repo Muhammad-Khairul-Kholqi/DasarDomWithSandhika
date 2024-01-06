@@ -1,0 +1,1 @@
+Manipulasi DOM adalah proses menggunakan JavaScript untuk dinamis mengubah struktur, gaya, atau konten halaman web

@@ -1,0 +1,2 @@
+Events mempresentasikan sebuah kejadian yang terjadi di dalam DOM
+Kejadian tersebut dilakukan oleh user

@@ -1,0 +1,51 @@
+#JENIS VARIABLE
+----------------
+Var:
+- Variabel var memiliki lingkup fungsi (function-scoped), artinya hanya dapat diakses di dalam fungsi tempat variabel tersebut dideklarasikan.
+- Tidak terdapat blok-scoping, sehingga variabel var yang dideklarasikan di dalam blok, seperti if atau loop, tetap dapat diakses di luar blok tersebut.
+- Memiliki perilaku hoisting, yang berarti deklarasi variabelnya akan dinaikkan ke bagian atas konteks fungsinya, meskipun inisialisasinya tetap ada di tempatnya. 
+- Code:
+    function example() {
+        if (true) {
+            var x = 10;
+        }
+        console.log(x); // Output: 10
+    }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Let: 
+-Variabel let memiliki lingkup blok (block-scoped), artinya hanya dapat diakses di dalam blok tempat variabel tersebut dideklarasikan.
+-Variabel let tidak dapat di-deklarasikan ulang di dalam satu blok yang sama.
+-Tidak memiliki perilaku hoisting yang kuat seperti var.
+- Code:
+    function example() {
+        if (true) {
+            let x = 10;
+            console.log(x); // Output: 10
+        }
+        // console.log(x); // Error: x is not defined
+    }
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Const:
+-Variabel const juga memiliki lingkup blok.
+-Nilai variabel const tidak dapat diubah setelah diberikan nilai pertama kali. Ini membuatnya cocok untuk mendeklarasikan konstanta.
+-Seperti let, variabel const tidak dapat di-deklarasikan ulang di dalam satu blok yang sama.
+- Code:
+    const pi = 3.14;
+    // pi = 3.14159; // Error: Assignment to constant variable.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Biasakan untuk lakukan deklarasi dan inisialisai sebelum melakukan assignment!
+var x; -> deklarasi $ inisialisai
+x = 20; -> assignment
+
+
+
+
