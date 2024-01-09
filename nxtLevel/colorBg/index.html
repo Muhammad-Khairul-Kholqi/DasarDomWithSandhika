@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +19,28 @@
         color: #fff;
     }
 </style>
+
 <body>
-<h1>Mengganti Warna background</h1>
-<button type="button" id="gantiWarna">Ganti Warna</button>
+    <h1>Mengganti Warna background</h1>
+    <button type="button" id="gantiWarna">Ganti Warna</button>
 
 
-<br><br>
-<input type="range">
+    <br><br>
+    <label for="sMerah">Atur warna merah</label>
+    <br>
+    <input type="range" name="sMerah" min="0" max="255">
 
-<script src="script.js"></script>
+    <br><br>
+    <label for="sHijau">Atur warna hijau</label>
+    <br>
+    <input type="range" name="sHijau" min="0" max="255">
+
+    <br><br>
+    <label for="sBiru">Atur warna biru</label>
+    <br>
+    <input type="range" name="sBiru" min="0" max="255">
+
+    <script src="script.js"></script>
 </body>
+
 </html>

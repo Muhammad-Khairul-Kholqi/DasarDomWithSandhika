@@ -6,6 +6,8 @@ gantiBg.onclick = function() {
     text.classList.toggle('ganti-color')
 }
 
+
+
 // GANTI WARNA BACKGROUND JADI RAANDOM
 // Penjelasan
 // buat elemen button
@@ -24,3 +26,31 @@ tAcak.addEventListener('click', function() {
     const b = Math.round(Math.random() * 255 + 1);
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
 });
+
+
+
+// GANTI WARNA DENGAN INPUT RANGE
+const kMerah = document.querySelector('input[name=sMerah]');
+const kHijau = document.querySelector('input[name=sHijau]');
+const kBiru = document.querySelector('input[name=sBiru]');
+kMerah.addEventListener('input', function(){
+    const r = kMerah.value;
+    const g = kHijau.value;
+    const b = kBiru.value;
+    document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
+});
+
+kHijau.addEventListener('input', function () {
+    const r = kMerah.value;
+    const g = kHijau.value;
+    const b = kBiru.value;
+    document.body.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+});
+
+kBiru.addEventListener('input', function () {
+    const r = kMerah.value;
+    const g = kHijau.value;
+    const b = kBiru.value;
+    document.body.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+});
+
