@@ -7,10 +7,16 @@ gantiBg.onclick = function() {
 }
 
 // GANTI WARNA BACKGROUND JADI RAANDOM
+// Penjelasan
+// buat elemen button
 const tAcak = document.createElement('button');
+// buat teks buat buttonnya
 const teksAcak = document.createTextNode('acak warna')
+// satukan button dengan teksnya
 tAcak.appendChild(teksAcak)
+// buat atritubut pada button
 tAcak.setAttribute('type', 'button');
+// taro button seteleh button yang gantiBg
 gantiBg.after(tAcak);
 tAcak.addEventListener('click', function() {
     const r = Math.round(Math.random() * 255 + 1);
