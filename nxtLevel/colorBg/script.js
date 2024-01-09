@@ -30,13 +30,19 @@ tAcak.addEventListener('click', function() {
 
 
 // GANTI WARNA DENGAN INPUT RANGE
+// panggil seluruh elemen input
 const kMerah = document.querySelector('input[name=sMerah]');
 const kHijau = document.querySelector('input[name=sHijau]');
 const kBiru = document.querySelector('input[name=sBiru]');
+// masukan kedalam function seperti biassa
 kMerah.addEventListener('input', function(){
+    //  buat variable
+    // panggil variable inputnya
+    // gunakan 'value' -> untuk panggil seluruh value yang ada di input 
     const r = kMerah.value;
     const g = kHijau.value;
     const b = kBiru.value;
+    // panggil semua variablnye di sini
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +', '+ b +')';
 });
 
